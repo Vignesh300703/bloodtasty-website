@@ -289,4 +289,33 @@ h2 em,
   font-family: var(--mono);
   font-size: 9px;
   letter-spacing: .12em;
+
+}
+@media (max-width: 768px) {
+  * {
+    box-sizing: border-box;
+  }
+
+  html, body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  h1 {
+    font-size: clamp(28px, 7vw, 42px);
+  }
+
+  h2 {
+    font-size: clamp(22px, 6vw, 32px);
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
 }
